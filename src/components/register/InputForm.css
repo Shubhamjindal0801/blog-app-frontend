@@ -1,0 +1,19 @@
+.signup-form{
+    /* max-width: 30vw;
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin:2rem 10rem;
+}
+.eye-icon {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left:97%;
+}
+
+.eye {
+    color: rgb(199, 198, 198);
+}

@@ -1,0 +1,10 @@
+.eye-icon {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left:97%;
+}
+
+.eye {
+    color: rgb(199, 198, 198);
+}

@@ -1,0 +1,19 @@
+.header-component{
+    background-color: rgb(135, 135, 249);
+}
+
+.homepage-active{
+    transform: scale(1.15);
+}
+.createblog-active{
+    transform: scale(1.15);
+}
+.myblogs-header{
+    transform: scale(1.15);
+}
+.users-active{
+    transform: scale(1.15);
+}
+.headerClass{
+    transform: scale(1) !important;
+}

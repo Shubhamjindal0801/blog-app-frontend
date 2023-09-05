@@ -25,7 +25,7 @@ function LoginForm() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         //await loginUser(userDetails)
-        await Axios.post(`http://localhost:3004/user/login`, userDetails)
+        await Axios.post(`https://blog-app-backend-9ut8.onrender.com/user/login`, userDetails)
             .then((res) => {
                 toast.success(res.data.message)
                 localStorage.setItem('user', JSON.stringify(res.data.data))

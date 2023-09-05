@@ -22,7 +22,7 @@ function InputForm() {
             password
         }
 
-        await axios.post(`http://localhost:3004/user/signup`, userDetails)
+        await axios.post(`https://blog-app-backend-9ut8.onrender.com/user/signup`, userDetails)
             .then((res) => {
                 toast.success(res.data.message)
                 setTimeout(() => {

@@ -17,7 +17,7 @@ function CreateBlog() {
       textBody,
       userId
     };
-    await Axios.post(`http://localhost:3004/user/blog/create-blog`,blogObj)
+    await Axios.post(`https://blog-app-backend-9ut8.onrender.com/user/blog/create-blog`,blogObj)
       .then((res) => {
         toast.success(res.data.message)
         setTimeout(()=>{

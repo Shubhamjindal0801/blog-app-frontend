@@ -16,9 +16,9 @@ function Users() {
 
     useEffect(() => {
         setIsLoading(true)
-        axios.get(`http://localhost:3004/user/allusers/${userData.userId}`)
+        axios.get(`https://blog-app-backend-9ut8.onrender.com/user/allusers/${userData.userId}`)
             .then((res1) => {
-                axios.get(`http://localhost:3004/user/following-list/${userData.userId}`)
+                axios.get(`https://blog-app-backend-9ut8.onrender.com/user/following-list/${userData.userId}`)
                     .then((res2) => {
                         let followingMap = new Map()
 
@@ -69,7 +69,7 @@ function Users() {
 
     const getFollowingList = async () => {
         setIsLoading(true)
-        await axios.get(`http://localhost:3004/user/following-list/${userData.userId}`)
+        await axios.get(`https://blog-app-backend-9ut8.onrender.com/user/following-list/${userData.userId}`)
             .then((res) => {
                 setIsLoading(false)
                 setApiCrashes(false)
@@ -84,7 +84,7 @@ function Users() {
 
     const getFollowerList = async () => {
         setIsLoading(true)
-        await axios.get(`http://localhost:3004/user/follower-list/${userData.userId}`)
+        await axios.get(`https://blog-app-backend-9ut8.onrender.com/user/follower-list/${userData.userId}`)
             .then((res) => {
                 setIsLoading(false)
                 setApiCrashes(false)

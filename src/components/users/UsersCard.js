@@ -8,7 +8,7 @@ function UsersCard({ props }) {
 
     const handleFollow = (followingUserId) => {
         const followObj = { followingUserId }
-        axios.post(`http://localhost:3004/user/follow-user/${userData.userId}`, followObj)
+        axios.post(`https://blog-app-backend-9ut8.onrender.com/user/follow-user/${userData.userId}`, followObj)
             .then((res) => {
                 toast.success(`You started following ${props.name}`)
                 setTimeout(() => {
@@ -21,7 +21,7 @@ function UsersCard({ props }) {
 
     const handleUnfollow = (followingUserId) => {
         const followObj = { followingUserId }
-        axios.post(`http://localhost:3004/user/unfollow-user/${userData.userId}`, followObj)
+        axios.post(`https://blog-app-backend-9ut8.onrender.com/user/unfollow-user/${userData.userId}`, followObj)
             .then((res) => {
                 toast.success(`You stopped following ${props.name}`)
                 setTimeout(() => {

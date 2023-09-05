@@ -10,7 +10,7 @@ function MyBlog() {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        Axios.get(`http://localhost:3004/user/blog/my-blogs/${userData.userId}`)
+        Axios.get(`https://blog-app-backend-9ut8.onrender.com/user/blog/my-blogs/${userData.userId}`)
             .then((res) => {
                 setIsLoading(false)
                 setMyBlogs(res.data.data)

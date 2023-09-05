@@ -15,7 +15,7 @@ function BlogCard({ props, buttons }) {
     const handleDelete = () => {
         const deleteRes = window.confirm('Do you really want to delete this?')
         if (deleteRes === true) {
-            Axios.delete(`http://localhost:3004/user/blog/delete-blog/${props._id}`)
+            Axios.delete(`https://blog-app-backend-9ut8.onrender.com/user/blog/delete-blog/${props._id}`)
                 .then((res) => {
                     //alert(res.data.message)
                     toast.success(res.data.message)
@@ -40,7 +40,7 @@ function BlogCard({ props, buttons }) {
             textBody: textBody,
             userId: props.userId
         }
-        Axios.put(`http://localhost:3004/user/blog/edit-blog`, newBlog)
+        Axios.put(`https://blog-app-backend-9ut8.onrender.com/user/blog/edit-blog`, newBlog)
             .then((res) => {
                 toast.success(res.data.message)
                 setTimeout(() => {

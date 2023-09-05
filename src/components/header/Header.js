@@ -9,7 +9,7 @@ function Header() {
 
     const handleLogout = async () => {
         // await userlogout()
-        axios.post(`http://localhost:3004/user/logout`).then((res) => {
+        axios.post(`https://blog-app-backend-9ut8.onrender.com/user/logout`).then((res) => {
             toast.success(res.data.message)
         }).catch((err) => {
             toast.error(err.response.data.message)

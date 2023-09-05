@@ -11,7 +11,7 @@ function Homepage() {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/user/blog/homepageblogs/${userData.userId}`)
+        axios.get(`https://blog-app-backend-9ut8.onrender.com/user/blog/homepageblogs/${userData.userId}`)
             .then((res) => {
                 setIsLoading(false)
                 setBlogs(res.data.data)
